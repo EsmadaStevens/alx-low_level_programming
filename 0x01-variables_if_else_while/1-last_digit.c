@@ -3,7 +3,7 @@
 #include <stdio.h>
 
 /**
- * main - prints the last digit
+ * main - prints the last digit of a number
  *
  * Return: 0 (Success)
  */
@@ -19,6 +19,6 @@ int main(void)
 	else if (n % 10 == 0)
 		printf("and is 0\n");
 	else if (n % 10 < 6 && n % 10 != 0)
-		printf("and is less than 6 but not 0\n");
+		printf("and is less than 6 and not 0\n");
 	return (0);
 }
