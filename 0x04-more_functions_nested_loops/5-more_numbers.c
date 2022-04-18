@@ -5,18 +5,34 @@
  *
  * Return: Always 0
  */
-void more_numbers(void)
+void more_numbers(void);
 {
-	int i, j;
+	int i;
+	int num1;
+	int num2;
+	int result;
 
-	for (i = 0; i < 10; i++)
+	i = 0;
+	result = 0;
+
+	while (i < 10)
 	{
-		for (j = 0; j <= 14; j++)
-		{
-			if (j >= 10)
-				_putchar(j / 10 + '0');
-			putchar(j % 10 + '0');
-		}
-		_putchar('\n');
+	while (result <= 1)
+	{
+	if (result < 10)
+	{
+	num2 = result;
+	}
+	else
+	{ num1 = result / 10;
+		num2 = % 10;
+		_putchar(num1 + '0');
+	}
+	_putchar(num2 + '0');
+	result++;
+	}
+	i++;
+	result = 0;
+	_putchar('\n');
 	}
 }
