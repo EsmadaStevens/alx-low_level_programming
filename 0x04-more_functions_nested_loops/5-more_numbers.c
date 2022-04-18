@@ -8,8 +8,8 @@
 void more_numbers(void);
 {
 	int i;
-	int num1;
-	int num2;
+	int first_number;
+	int second_number;
 	int result;
 
 	i = 0;
@@ -21,14 +21,14 @@ void more_numbers(void);
 	{
 	if (result < 10)
 	{
-	num2 = result;
+	second_number = result;
 	}
 	else
-	{ num1 = result / 10;
-		num2 = % 10;
+	{first_number = result / 10;
+		second_number = % 10;
 		_putchar(num1 + '0');
 	}
-	_putchar(num2 + '0');
+	_putchar(second_number + '0');
 	result++;
 	}
 	i++;
