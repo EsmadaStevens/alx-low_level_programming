@@ -5,7 +5,7 @@
  * @s: string to be printed
  * Return: ALways 0
  */
-nt _strlen(char *s)
+int _strlen(char *s)
 {
 	int a;
 
